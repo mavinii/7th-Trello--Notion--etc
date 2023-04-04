@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KanBan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <nav>
+
+        <!-- logo -->
+        <img src="./assets/logo.svg" alt="website logo" class="logo" />
+
+        <!-- side menu -->
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <ion-icon name="pulse-outline"></ion-icon>
+              To-Do
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="hammer-outline"></ion-icon>
+              Doing
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="bug-outline"></ion-icon>
+              Bug
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="heart-outline"></ion-icon>
+              Done
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="balloon-outline"></ion-icon>
+              Future Implementation
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="inner">
+            
+            <!-- title + picture -->
+            <section class="title-avatar">
+                <h1>My Kanban <ion-icon name="pencil"></ion-icon></h1>
+                <img src="https://github.com/mavinii.png" alt="profile picture">
+            </section>
+
+            <!-- filter + input -->
+            <section class="filter">
+                <button>
+                    <ion-icon name="filter-outline"></ion-icon>
+                    <span>Filter</span>
+                </button>
+                <div class="input-wrapper">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="text" placeholder="Search for cards...">
+                </div>
+            </section>
+
+            <!-- kanban cards -->
+            <section class="kanban">
+            
+              <!-- TODO -->
+              <div class="todo">
+                <h2>Todo</h2>
+                <div class="cards">
+
+                  <div class="card">
+                    <h3>Coding Kanban</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                    </p>
+                    <div class="tags">
+                      <span>#BoraCodar</span>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <h3>Lorem, ipsum!</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam, quae.
+                    </p>
+                    <div class="tags">
+                      <span>#BoraCodar</span>
+                      <span>#LetsCoding</span>
+                      <span>#RocketSeat</span>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <h3>adipisicing elit amet</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                    </p>
+                    <div class="tags">
+                      <span>#LetsCoding</span>
+                      <span>#RocketSeat</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DOING -->
+              <div class="doing">
+                <h2>Doing</h2>
+                <div class="cards">
+                  <div class="card">
+                    <h3>Coding Kanban</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam, quae.
+                    </p>
+                    <div class="tags">
+                      <span>#BoraCodar</span>
+                      <span>#LetsCoding</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Done -->
+              <div class="done">
+                <h2>Done</h2>
+                <div class="cards">
+
+                  <div class="card">
+                    <h3>Coding Kanban</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam, quae.
+                    </p>
+                    <div class="tags">
+                      <span>#BoraCodar</span>
+                      <span>#LetsCoding</span>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <h3>Quisquam, quae.</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                    </p>
+                    <div class="tags">
+                      <span>#BoraCodar</span>
+                      <span>#ABetterDay</span>
+                      <span>#LetsCoding</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </section>
+        </div>
+      </main>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
